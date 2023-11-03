@@ -36,5 +36,4 @@ jobs:
         with:
           strategy: regex
           root: "Dockerfile"
-          regex_pattern: "KUBECTL_VERSION=(\\d+\\.\\d+\\.\\d+)"
-          tag_prefix: "v"
+          regex_pattern: "KUBECTL_VERSION=v(\\d+\\.\\d+\\.\\d+)"
