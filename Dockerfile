@@ -4,7 +4,7 @@
 FROM alpine:3.18.4@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978 as builder
 
 # renovate: datasource=github-releases depName=kubectl lookupName=kubernetes/kubernetes
-ARG KUBECTL_VERSION=v1.28.3
+ARG KUBECTL_VERSION=v1.28.4
 # renovate: datasource=github-releases depName=jq lookupName=jqlang/jq
 ARG JQ_VERSION=1.7
 ARG TARGETARCH
