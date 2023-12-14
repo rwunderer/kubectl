@@ -36,7 +36,7 @@ ENTRYPOINT ["/bin/kubectl"]
 #-------------------
 # Debug image
 #-------------------
-FROM gcr.io/distroless/base-debian12:debug-nonroot@sha256:2f9b3cdc8d45df049e274cf6e10706d9a57e7ef252fec159a9d534bfd30e3c61 as kubectl-debug
+FROM gcr.io/distroless/base-debian12:debug-nonroot@sha256:8548e3041a2cc583998c6a6beabf13ae93e6b006a5f6a6194966b4327ea741f5 as kubectl-debug
 
 COPY --from=builder /bin/jq /bin/jq
 COPY --from=builder /bin/kubectl /bin/kubectl
