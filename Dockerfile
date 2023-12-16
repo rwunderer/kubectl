@@ -27,7 +27,7 @@ RUN curl -SsLL -o kubectl https://storage.googleapis.com/kubernetes-release/rele
 #-------------------
 # Minimal image
 #-------------------
-FROM gcr.io/distroless/static-debian12:nonroot@sha256:45e75c9ed314a1723c628d401ec6025dcf505949ab07a3e6e3bf9b0dc240bd0e as kubectl-minimal
+FROM gcr.io/distroless/static-debian12:nonroot@sha256:39ae7f0201fee13b777a3e4a5a9326a8889269172c8b4f4289d9f19c831f45f4 as kubectl-minimal
 
 COPY --from=builder /bin/kubectl /bin/kubectl
 
