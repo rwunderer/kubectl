@@ -9,6 +9,15 @@
   "packageRules": [
     {
       "matchPackageNames": ["kubectl"],
+      "automerge": true,
+      "addLabels": [
+        "renovate_publish"
+      ]
+    },
+    {
+      "matchPackageNames": ["upcloud-cli"],
+      "extractVersion": "^v(?<version>.*)$",
+      "automerge": true,
       "addLabels": [
         "renovate_publish"
       ]
