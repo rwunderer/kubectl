@@ -8,5 +8,5 @@ on:
 
 jobs:
   release:
-    uses: rwunderer/renovate/.github/workflows/reusable-create-release.yaml
+    uses: rwunderer/renovate/.github/workflows/reusable-create-release.yaml@main
     secrets: inherit

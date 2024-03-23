@@ -11,7 +11,7 @@ on:
 
 jobs:
   update_tag:
-    uses: rwunderer/renovate/.github/workflows/reusable-auto-tag.yaml
+    uses: rwunderer/renovate/.github/workflows/reusable-auto-tag.yaml@main
     with:
       regex-pattern: "KUBECTL_VERSION=(v\\d+\\.\\d+\\.\\d+)"
       tag-prefix: ""

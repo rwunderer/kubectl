@@ -12,7 +12,7 @@ on:
 
 jobs:
   build:
-    uses: rwunderer/renovate/.github/workflows/reusable-docker-publish.yaml
+    uses: rwunderer/renovate/.github/workflows/reusable-docker-publish.yaml@main
     with:
       minimal-image: kubectl-minimal
       debug-image: kubectl-debug
