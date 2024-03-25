@@ -11,6 +11,9 @@ on:
 
 jobs:
   update_tag:
+    permissions:
+      contents: write
+
     uses: rwunderer/renovate/.github/workflows/reusable-auto-tag.yml@main
     with:
       regex-pattern: "KUBECTL_VERSION=(v\\d+\\.\\d+\\.\\d+)"

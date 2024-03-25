@@ -8,5 +8,8 @@ on:
 
 jobs:
   release:
+    permissions:
+      contents: write
+
     uses: rwunderer/renovate/.github/workflows/reusable-create-release.yml@main
     secrets: inherit
