@@ -19,9 +19,22 @@ jobs:
       # with sigstore/fulcio when running outside of PRs.
       id-token: write
 
+    strategy:
+      matrix:
+        image:
+        - minimal
+        - debug
+
+        include:
+        - suffix: -minimal
+          target: kubectl-minimal
+
+        - suffix: -debug
+          target: kubectl-debuG
+
     uses: rwunderer/renovate/.github/workflows/reusable-docker-publish.yml@main
     with:
-      minimal-image: kubectl-minimal
-      debug-image: kubectl-debug
+      suffix: ${{ matrix.suffix }}
+      target: ${{ matrix.target }}
       docker-description: Minimal Docker image with kubectl cli utility
     secrets: inherit
