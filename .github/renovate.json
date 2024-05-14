@@ -4,19 +4,22 @@
     "github>rwunderer/renovate",
     "github>rwunderer/renovate:container-tools",
     "github>rwunderer/renovate:cosign-version",
-    "regexManagers:dockerfileVersions"
+    "customManagers:dockerfileVersions"
   ],
-
   "packageRules": [
     {
-      "matchPackageNames": ["kubectl"],
+      "matchPackageNames": [
+        "kubectl"
+      ],
       "automerge": true,
       "addLabels": [
         "renovate_publish"
       ]
     },
     {
-      "matchPackageNames": ["upcloud-cli"],
+      "matchPackageNames": [
+        "upcloud-cli"
+      ],
       "extractVersion": "^v(?<version>.*)$",
       "automerge": true,
       "addLabels": [
