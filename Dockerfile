@@ -13,7 +13,7 @@ ARG TARGETVARIANT
 
 # FAKE to trick renovate in to updating...
 # renovate: datasource=github-releases depName=upcloud-cli lookupName=UpCloudLtd/upcloud-cli
-ARG UPCTL_VERSION=3.8.0
+ARG UPCTL_VERSION=3.8.1
 
 WORKDIR /tmp
 
