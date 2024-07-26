@@ -30,7 +30,7 @@ jobs:
           target: kubectl-minimal
 
         - suffix: -debug
-          target: kubectl-debuG
+          target: kubectl-debug
 
     uses: rwunderer/renovate/.github/workflows/reusable-docker-publish.yml@main
     with:
