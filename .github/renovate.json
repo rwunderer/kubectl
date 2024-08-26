@@ -8,10 +8,11 @@
   ],
   "packageRules": [
     {
-      "matchPackageNames": [
+      "matchDepNames": [
         "kubectl"
       ],
       "automerge": true,
+      "automergeType": "pr",
       "addLabels": [
         "renovate_publish"
       ]
